@@ -1,7 +1,7 @@
 Textpattern to Statamic migration script
 ======================================
 
-Tool to prepare content from the Textpattern CMS into a format suitable for the Statamic CMS
+Script to prepare content from the Textpattern CMS into a format suitable for the Statamic CMS
 
 Instructions 
 ------------

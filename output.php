@@ -98,7 +98,7 @@
 	$modified = 0;
 	while ($data = mysql_fetch_array($res)) { 
 	    $section = $data['name'];
-	    $resContent = mysql_query('SELECT * FROM `'.$txpcfg['table_prefix'].'textpattern` WHERE `Section` = "'.$section.'" && `Status`="4" ORDER BY `Posted` DESC'); 
+	    $resContent = mysql_query('SELECT * FROM `'.$txpcfg['table_prefix'].'textpattern` WHERE `Section` = "'.$section.'" && (`Status`="4" OR `Status`="5") ORDER BY `Posted` DESC'); 
 		$numContent = mysql_num_rows($resContent);
 		if ($numContent > 0) {		
 			if (!file_exists($section)) {
